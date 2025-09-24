@@ -2,6 +2,12 @@
 // 9/8/25
 // This program allows the user to guess a number between 1-100
 
+//1. No global variables. (Global constants are all right.)
+
+//2. No strings. Not ever. (You can use cstrings/character arrays, and the cstring and cctype libraries are okay. In fact, I recommend using strcmp and strlen in your projects.)
+
+//3. You should include <iostream>, not stdio. (This applies more to C programmers.) Also, use "new" and "delete" instead of "malloc" and "free".
+
 #include <iostream>
 #include <ctime>
 
@@ -60,11 +66,11 @@ int main ()
     cin >> input2;
 
     // Continues if the user says yes
-      if (input2 = 'y'){
+      if (input2 == 'y'){
 	continue;
     }
       // Stops the game if the user says no
-      else if (input2 = 'n'){
+      else if (input2 == 'n'){
 	cout << "Thanks for playing!" << endl;
 	break;
       }
